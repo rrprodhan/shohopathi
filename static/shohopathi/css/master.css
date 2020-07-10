@@ -1,0 +1,8 @@
+/* Main working CSS */
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  color:white;
+}

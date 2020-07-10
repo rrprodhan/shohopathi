@@ -1,0 +1,15 @@
+<!-- log out page -->
+
+{% extends "base.html" %}
+{% load bootstrap3 %}
+
+{% block content %}
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form method="POST">  <!-- POST: sends form data via the server. It's good for sending form data to databases -->
+      {% csrf_token %}    <!-- To give CSRF (Cross Site Request Forgery) protection while submitting forms -->
+      {% bootstrap_form form %}   <!-- Generating the form that we defined in views.py using bootstrap styling -->
+      <input type="submit" class="btn btn-default" value="Sign Up">
+    </form>
+  </div>
+{% endblock %}
